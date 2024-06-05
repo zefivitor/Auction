@@ -5,9 +5,13 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.auction.springvproject.models.BankAccount;
+import com.auction.springvproject.repository.BankAccountRepository;
 import com.auction.springvproject.security.services.UserDetailsImpl;
 import jakarta.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -39,6 +43,9 @@ public class AuthController {
   @Autowired
   AuthenticationManager authenticationManager;
 
+  private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
+
+
   @Autowired
   UserRepository userRepository;
 
@@ -47,6 +54,8 @@ public class AuthController {
 
   @Autowired
   PasswordEncoder encoder;
+  @Autowired
+  BankAccountRepository bankAccountRepository;
 
   @Autowired
   JwtUtils jwtUtils;
@@ -65,6 +74,8 @@ public class AuthController {
         .map(item -> item.getAuthority())
         .collect(Collectors.toList());
 
+    logger.info("User with username " + userDetails.getUsername() + " successfully logged in");
+
     return ResponseEntity.ok(new JwtResponse(jwt, 
                          userDetails.getId(), 
                          userDetails.getUsername(), 
@@ -73,7 +84,7 @@ public class AuthController {
   }
 
   @PostMapping("/signup")
-  public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
+  public ResponseEntity<?> registerUser(@RequestBody SignupRequest signUpRequest) {
     if (userRepository.existsByUsername(signUpRequest.getUsername())) {
       return ResponseEntity
           .badRequest()
@@ -123,6 +134,12 @@ public class AuthController {
 
     user.setRoles(roles);
     userRepository.save(user);
+
+      //Add initial balance 1000
+    BankAccount bankAccount = new BankAccount(user.getUsername(),1000);
+    bankAccountRepository.save(bankAccount);
+    logger.info("User successfully registered " + user.getUsername());
+
 
     return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
   }

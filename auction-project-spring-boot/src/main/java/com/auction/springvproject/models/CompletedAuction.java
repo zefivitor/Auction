@@ -9,7 +9,7 @@ import java.time.Instant;
 import java.util.Date;
 
 @Entity
-public class Product {
+public class CompletedAuction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,10 +20,10 @@ public class Product {
     private double price;
     private Date dateClosed;
 
-    public Product() {
+    public CompletedAuction() {
     }
 
-    public Product(String createdUser, String name, String description, double price, Date dateClosed) {
+    public CompletedAuction(String createdUser, String name, String description, double price, Date dateClosed) {
         this.createdUser = createdUser;
         this.name = name;
         this.description = description;
