@@ -1,0 +1,807 @@
+2024-06-05 14:59:31.747 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 14:59:31.793 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 22204 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 14:59:31.794 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 14:59:32.525 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:59:32.603 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 5 JPA repository interfaces.
+2024-06-05 14:59:33.206 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 14:59:33.215 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 14:59:33.216 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 14:59:33.216 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 14:59:33.303 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 14:59:33.304 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1456 ms
+2024-06-05 14:59:33.449 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 14:59:33.516 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 14:59:33.520 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 14:59:33.674 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 14:59:33.814 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 14:59:33.832 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 14:59:34.204 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cf984d9
+2024-06-05 14:59:34.206 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 14:59:34.257 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 14:59:34.552 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 14:59:35.283 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 14:59:35.486 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:59:36.063 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 14:59:36.442 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 14:59:36.736 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a72160a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a01c55, org.springframework.security.web.context.SecurityContextHolderFilter@673218b2, org.springframework.security.web.header.HeaderWriterFilter@5c7a699b, org.springframework.security.web.authentication.logout.LogoutFilter@20307cb9, com.auction.springvproject.security.jwt.AuthTokenFilter@1f2d0ca2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@529a2d6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a28b6d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1560982f, org.springframework.security.web.session.SessionManagementFilter@412bb41f, org.springframework.security.web.access.ExceptionTranslationFilter@67f8586f, org.springframework.security.web.access.intercept.AuthorizationFilter@32514766]
+2024-06-05 14:59:36.988 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 14:59:37.017 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 14:59:37.026 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 14:59:37.026 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 5.785 seconds (process running for 6.577)
+2024-06-05 15:00:38.508 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 15:00:38.508 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 15:00:38.510 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-05 15:00:38.716 [http-nio-8080-exec-1] INFO  c.a.s.controllers.ProductController - Listing all products
+2024-06-05 15:01:39.860 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:01:39.864 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:01:39.882 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 15:38:06.242 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 15:38:06.283 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 44208 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 15:38:06.283 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 15:38:07.208 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 15:38:07.291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+2024-06-05 15:38:08.063 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 15:38:08.075 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:38:08.075 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 15:38:08.075 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 15:38:08.179 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 15:38:08.180 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1845 ms
+2024-06-05 15:38:08.405 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 15:38:08.500 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 15:38:08.503 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 15:38:08.699 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:38:08.924 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 15:38:08.944 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 15:38:09.578 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54941dfd
+2024-06-05 15:38:09.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 15:38:09.653 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 15:38:10.017 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:38:10.970 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 15:38:11.265 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:38:12.049 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 15:38:12.626 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 15:38:13.056 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f5ae4e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fb006dc, org.springframework.security.web.context.SecurityContextHolderFilter@6bb2b8d4, org.springframework.security.web.header.HeaderWriterFilter@22b112bb, org.springframework.security.web.authentication.logout.LogoutFilter@62036b05, com.auction.springvproject.security.jwt.AuthTokenFilter@267309f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ff584d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7752f9fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1285ec6, org.springframework.security.web.session.SessionManagementFilter@4a28b6d0, org.springframework.security.web.access.ExceptionTranslationFilter@77984827, org.springframework.security.web.access.intercept.AuthorizationFilter@5642cd03]
+2024-06-05 15:38:13.337 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:38:13.355 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 15:38:13.363 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 15:38:13.363 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 7.662 seconds (process running for 8.572)
+2024-06-05 15:38:44.549 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 15:38:44.550 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 15:38:44.551 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 15:43:33.343 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m53s651ms126µs900ns).
+2024-06-05 15:43:33.468 [http-nio-8080-exec-1] INFO  c.a.s.controllers.ProductController - Listing all products
+2024-06-05 15:43:33.555 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:43:33.560 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:43:33.580 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 15:43:48.116 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 15:43:48.158 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 27992 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 15:43:48.159 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 15:43:48.894 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 15:43:48.973 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 5 JPA repository interfaces.
+2024-06-05 15:43:49.589 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 15:43:49.601 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:43:49.601 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 15:43:49.601 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 15:43:49.689 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 15:43:49.689 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1483 ms
+2024-06-05 15:43:49.830 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 15:43:49.881 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 15:43:49.883 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 15:43:50.039 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:43:50.185 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 15:43:50.203 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 15:43:50.534 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24018c8b
+2024-06-05 15:43:50.535 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 15:43:50.586 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 15:43:50.883 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:43:51.705 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 15:43:52.010 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:43:52.627 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 15:43:53.000 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 15:43:53.498 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f9e38d4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7310bc90, org.springframework.security.web.context.SecurityContextHolderFilter@5c7a699b, org.springframework.security.web.header.HeaderWriterFilter@57f076bd, org.springframework.security.web.authentication.logout.LogoutFilter@7d28d525, com.auction.springvproject.security.jwt.AuthTokenFilter@62cf873a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dd36967, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7821d009, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18a421ea, org.springframework.security.web.session.SessionManagementFilter@42b4cce1, org.springframework.security.web.access.ExceptionTranslationFilter@4d248692, org.springframework.security.web.access.intercept.AuthorizationFilter@349e166]
+2024-06-05 15:43:53.758 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:43:53.782 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 15:43:53.791 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 15:43:53.791 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 6.113 seconds (process running for 10.138)
+2024-06-05 15:44:07.277 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 15:44:07.277 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 15:44:07.278 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 15:44:30.529 [http-nio-8080-exec-1] INFO  c.a.s.controllers.ProductController - Listing all products
+2024-06-05 15:44:38.053 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:44:38.055 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:44:38.069 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 15:44:49.162 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 15:44:49.206 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 21688 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 15:44:49.207 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 15:44:49.941 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 15:44:50.014 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+2024-06-05 15:44:50.664 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 15:44:50.671 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:44:50.672 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 15:44:50.673 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 15:44:50.762 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 15:44:50.762 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1489 ms
+2024-06-05 15:44:50.989 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 15:44:51.068 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 15:44:51.075 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 15:44:51.198 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:44:51.320 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 15:44:51.333 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 15:44:51.677 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15e5246
+2024-06-05 15:44:51.679 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 15:44:51.729 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 15:44:51.994 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:44:52.733 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 15:44:52.945 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:44:53.484 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 15:44:53.860 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 15:44:54.134 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28b36817, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6645c1f, org.springframework.security.web.context.SecurityContextHolderFilter@1b12c870, org.springframework.security.web.header.HeaderWriterFilter@3503e68e, org.springframework.security.web.authentication.logout.LogoutFilter@7dc16d33, com.auction.springvproject.security.jwt.AuthTokenFilter@16279a5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ddd5715, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d88d9d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@237e4ed9, org.springframework.security.web.session.SessionManagementFilter@5ccc07ae, org.springframework.security.web.access.ExceptionTranslationFilter@160b7ccd, org.springframework.security.web.access.intercept.AuthorizationFilter@753b6846]
+2024-06-05 15:44:54.363 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:44:54.386 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 15:44:54.393 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 5.653 seconds (process running for 6.246)
+2024-06-05 15:44:54.393 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 15:44:57.736 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 15:44:57.736 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 15:44:57.737 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 15:44:57.903 [http-nio-8080-exec-1] INFO  c.a.s.controllers.ProductController - Listing all products
+2024-06-05 15:45:31.515 [http-nio-8080-exec-2] INFO  c.a.s.c.CompletedAuctionController - Trying to get all completed auctions
+2024-06-05 15:47:01.222 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:47:01.224 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:47:01.229 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 15:47:09.302 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 15:47:09.384 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 44052 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 15:47:09.385 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 15:47:10.154 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 15:47:10.236 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 5 JPA repository interfaces.
+2024-06-05 15:47:10.810 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 15:47:10.818 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:47:10.819 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 15:47:10.819 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 15:47:10.909 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 15:47:10.910 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1473 ms
+2024-06-05 15:47:11.035 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 15:47:11.097 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 15:47:11.099 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 15:47:11.235 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:47:11.369 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 15:47:11.385 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 15:47:11.734 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3220c28
+2024-06-05 15:47:11.736 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 15:47:11.788 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 15:47:12.084 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:47:12.846 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 15:47:13.001 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:47:13.651 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 15:47:14.042 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 15:47:14.315 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62036b05, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32514766, org.springframework.security.web.context.SecurityContextHolderFilter@74f1e112, org.springframework.security.web.header.HeaderWriterFilter@37ddb835, org.springframework.security.web.authentication.logout.LogoutFilter@7310bc90, com.auction.springvproject.security.jwt.AuthTokenFilter@44cab872, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446dbf7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cb09347, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@720cbb7d, org.springframework.security.web.session.SessionManagementFilter@618a9cb7, org.springframework.security.web.access.ExceptionTranslationFilter@25000d3d, org.springframework.security.web.access.intercept.AuthorizationFilter@61563a91]
+2024-06-05 15:47:14.565 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:47:14.580 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 15:47:14.588 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 15:47:14.588 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 5.728 seconds (process running for 6.435)
+2024-06-05 15:47:23.509 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 15:47:23.509 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 15:47:23.511 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 15:51:45.639 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m58s924ms656µs200ns).
+2024-06-05 15:51:45.648 [http-nio-8080-exec-1] INFO  c.a.s.controllers.AuthController - User with username zefi successfully logged in
+2024-06-05 15:51:45.807 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:51:45.808 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:51:45.816 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 15:51:59.880 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 15:51:59.923 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 17360 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 15:51:59.924 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 15:52:00.679 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 15:52:00.767 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
+2024-06-05 15:52:01.356 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 15:52:01.365 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:52:01.366 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 15:52:01.366 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 15:52:01.445 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 15:52:01.445 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1469 ms
+2024-06-05 15:52:01.575 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 15:52:01.640 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 15:52:01.643 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 15:52:01.785 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:52:01.913 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 15:52:01.930 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 15:52:02.285 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a7e81
+2024-06-05 15:52:02.288 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 15:52:02.356 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 15:52:02.636 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:52:03.351 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 15:52:03.555 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:52:04.173 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 15:52:04.571 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 15:52:04.862 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a72160a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a01c55, org.springframework.security.web.context.SecurityContextHolderFilter@673218b2, org.springframework.security.web.header.HeaderWriterFilter@5c7a699b, org.springframework.security.web.authentication.logout.LogoutFilter@20307cb9, com.auction.springvproject.security.jwt.AuthTokenFilter@e353e1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@529a2d6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a28b6d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1560982f, org.springframework.security.web.session.SessionManagementFilter@412bb41f, org.springframework.security.web.access.ExceptionTranslationFilter@67f8586f, org.springframework.security.web.access.intercept.AuthorizationFilter@32514766]
+2024-06-05 15:52:05.137 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:52:05.153 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 15:52:05.162 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 15:52:05.162 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 5.757 seconds (process running for 6.623)
+2024-06-05 15:52:12.057 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 15:52:12.058 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 15:52:12.059 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 15:52:44.782 [http-nio-8080-exec-1] INFO  c.a.s.controllers.AuthController - User with username zefi successfully logged in
+2024-06-05 15:52:56.841 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:52:56.843 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:52:56.856 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 15:53:08.957 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 15:53:09.000 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 29824 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 15:53:09.001 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 15:53:09.716 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 15:53:09.784 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+2024-06-05 15:53:10.366 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 15:53:10.373 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:53:10.373 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 15:53:10.374 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 15:53:10.455 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 15:53:10.455 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1396 ms
+2024-06-05 15:53:10.591 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 15:53:10.636 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 15:53:10.639 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 15:53:10.766 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:53:10.879 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 15:53:10.893 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 15:53:11.212 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15e5246
+2024-06-05 15:53:11.214 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 15:53:11.267 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 15:53:11.544 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 15:53:12.218 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 15:53:12.356 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:53:13.031 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 15:53:13.395 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 15:53:13.702 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28b36817, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6645c1f, org.springframework.security.web.context.SecurityContextHolderFilter@1b12c870, org.springframework.security.web.header.HeaderWriterFilter@3503e68e, org.springframework.security.web.authentication.logout.LogoutFilter@7dc16d33, com.auction.springvproject.security.jwt.AuthTokenFilter@16279a5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ddd5715, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d88d9d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@237e4ed9, org.springframework.security.web.session.SessionManagementFilter@5ccc07ae, org.springframework.security.web.access.ExceptionTranslationFilter@160b7ccd, org.springframework.security.web.access.intercept.AuthorizationFilter@753b6846]
+2024-06-05 15:53:13.934 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 15:53:13.948 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 15:53:13.956 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 15:53:13.956 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 5.401 seconds (process running for 5.988)
+2024-06-05 15:53:22.058 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 15:53:22.058 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 15:53:22.059 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 15:53:22.420 [http-nio-8080-exec-1] INFO  c.a.s.controllers.AuthController - User with username zefi successfully logged in
+2024-06-05 15:53:39.838 [http-nio-8080-exec-3] INFO  c.a.s.c.CompletedAuctionController - Trying to get all completed auctions
+2024-06-05 15:56:13.167 [http-nio-8080-exec-5] INFO  c.a.s.controllers.ProductController - Adding new product
+2024-06-05 15:56:43.460 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: The product can not buy by the created user] with root cause
+java.lang.RuntimeException: The product can not buy by the created user
+	at com.auction.springvproject.controllers.ProductController.buyProductFromAuctions(ProductController.java:87)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:199)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.auction.springvproject.controllers.ProductController$$SpringCGLIB$$0.buyProductFromAuctions(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.auction.springvproject.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-06-05 15:56:43.472 [http-nio-8080-exec-2] ERROR c.a.s.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2024-06-05 15:57:38.242 [http-nio-8080-exec-4] INFO  c.a.s.controllers.AuthController - User successfully registered zefi1
+2024-06-05 15:57:52.053 [http-nio-8080-exec-10] INFO  c.a.s.controllers.AuthController - User with username zefi1 successfully logged in
+2024-06-05 15:58:17.497 [http-nio-8080-exec-1] INFO  c.a.s.controllers.ProductController - Reserved product for user zefi1
+2024-06-05 15:59:28.868 [http-nio-8080-exec-5] INFO  c.a.s.controllers.ProductController - Adding new product
+2024-06-05 16:00:10.335 [http-nio-8080-exec-2] INFO  c.a.s.controllers.ProductController - Reserved product for user zefi
+2024-06-05 16:00:41.351 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 16:00:41.354 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 16:00:41.361 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 16:01:26.476 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 16:01:26.514 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 152 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 16:01:26.515 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 16:01:27.239 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 16:01:27.310 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+2024-06-05 16:01:27.829 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 16:01:27.836 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 16:01:27.837 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 16:01:27.837 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 16:01:27.908 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 16:01:27.908 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1321 ms
+2024-06-05 16:01:28.024 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 16:01:28.069 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 16:01:28.072 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 16:01:28.196 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 16:01:28.336 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 16:01:28.349 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 16:01:28.657 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15e5246
+2024-06-05 16:01:28.661 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 16:01:28.721 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 16:01:28.971 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 16:01:29.650 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 16:01:29.900 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 16:01:30.455 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 16:01:30.824 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 16:01:31.094 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37bafef8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a6b6f4, org.springframework.security.web.context.SecurityContextHolderFilter@4832813d, org.springframework.security.web.header.HeaderWriterFilter@198c97d0, org.springframework.security.web.authentication.logout.LogoutFilter@4df8f4e9, com.auction.springvproject.security.jwt.AuthTokenFilter@16279a5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@276ac94c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ccc07ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11636d43, org.springframework.security.web.session.SessionManagementFilter@12c55199, org.springframework.security.web.access.ExceptionTranslationFilter@16cc5e51, org.springframework.security.web.access.intercept.AuthorizationFilter@1915879c]
+2024-06-05 16:01:31.323 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 16:01:31.339 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 16:01:31.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:31.346 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 5.282 seconds (process running for 5.885)
+2024-06-05 16:01:32.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:33.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:34.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:35.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:36.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:37.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:38.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:39.347 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:40.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:41.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:42.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:43.347 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:44.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:45.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:46.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:47.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:48.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:49.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:50.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:51.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:52.345 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:53.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:54.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:55.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:56.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:57.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:58.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:59.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:01:59.420 [scheduling-1] INFO  c.a.s.controllers.ProductController - Inserted new completed auction to database
+2024-06-05 16:01:59.478 [scheduling-1] INFO  c.a.s.controllers.ProductController - Transferring money from zefi to zefi1
+2024-06-05 16:02:00.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:01.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:02.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:03.347 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:04.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:05.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:06.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:07.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:08.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:09.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:10.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:11.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:12.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:13.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:14.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:15.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:16.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:17.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:18.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:19.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:20.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:21.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:22.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:23.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:24.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:25.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:26.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:27.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:28.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:29.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:30.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:31.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:32.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:33.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:34.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:35.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:36.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:37.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:38.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:39.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:40.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:41.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:42.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:43.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:44.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:45.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:46.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:47.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:48.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:49.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:50.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:51.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:52.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:53.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:54.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:55.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:56.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:57.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:58.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:02:59.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:00.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:01.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:02.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:03.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:04.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:05.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:06.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:07.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:08.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:09.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:10.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:11.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:12.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:13.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:14.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:15.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:16.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:17.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:18.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:19.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:20.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:21.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:22.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:23.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:24.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:25.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:26.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:27.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:28.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:29.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:30.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:31.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:32.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:33.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:34.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:35.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:36.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:37.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:38.347 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:39.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:40.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:41.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:42.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:43.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:44.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:45.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:46.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:47.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:48.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:49.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:50.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:51.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:52.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:53.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:54.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:55.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:56.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:57.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:58.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:03:59.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:00.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:01.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:02.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:03.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:04.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:05.347 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:06.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:07.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:08.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:09.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:10.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:11.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:12.347 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:13.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:14.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:15.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:16.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:17.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:18.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:19.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:20.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:21.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:22.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:23.350 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:24.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:25.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:26.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:27.354 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:28.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:29.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:30.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:31.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:32.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:33.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:34.349 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:35.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:36.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:37.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:38.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:39.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:40.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:41.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:42.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:43.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:44.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:45.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:46.351 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:47.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:48.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:49.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:50.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:51.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:52.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:53.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:54.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:55.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:56.347 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:57.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:58.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:04:59.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:00.361 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:01.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:02.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:03.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:04.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:05.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:06.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:07.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:08.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:09.356 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:10.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:11.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:12.346 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:13.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:14.352 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:15.348 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:16.358 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:17.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:18.359 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:19.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:20.355 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:21.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:22.353 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:23.357 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:24.360 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:05:24.801 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 16:05:24.804 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 16:05:24.814 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 16:46:07.817 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 16:46:07.853 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 21456 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 16:46:07.854 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 16:46:08.509 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 16:46:08.578 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+2024-06-05 16:46:09.110 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 16:46:09.119 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 16:46:09.120 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 16:46:09.120 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 16:46:09.194 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 16:46:09.194 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1303 ms
+2024-06-05 16:46:09.315 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 16:46:09.386 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 16:46:09.388 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 16:46:09.530 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 16:46:09.674 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 16:46:09.694 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 16:46:10.060 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a7e81
+2024-06-05 16:46:10.061 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 16:46:10.111 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 16:46:10.361 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 16:46:11.037 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 16:46:11.225 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 16:46:11.763 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 16:46:12.122 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 16:46:27.597 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64230d44, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ff584d7, org.springframework.security.web.context.SecurityContextHolderFilter@2d6161b9, org.springframework.security.web.header.HeaderWriterFilter@1e32a3ed, org.springframework.security.web.authentication.logout.LogoutFilter@673218b2, com.auction.springvproject.security.jwt.AuthTokenFilter@452a32f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d28114b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79b9dfcd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7752f9fe, org.springframework.security.web.session.SessionManagementFilter@44986fae, org.springframework.security.web.access.ExceptionTranslationFilter@fbb585e, org.springframework.security.web.access.intercept.AuthorizationFilter@6bb2b8d4]
+2024-06-05 16:46:27.833 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 16:46:27.848 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 16:46:27.855 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:27.856 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 20.484 seconds (process running for 21.235)
+2024-06-05 16:46:30.817 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:34.865 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:36.112 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.669 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.674 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.677 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.680 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.684 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.687 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.690 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:46:38.725 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 16:46:38.727 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 16:46:38.732 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 16:46:51.697 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 16:46:51.732 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 16528 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 16:46:51.733 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 16:46:52.304 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 16:46:52.367 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+2024-06-05 16:46:52.850 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 16:46:52.857 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 16:46:52.857 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 16:46:52.857 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 16:46:52.934 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 16:46:52.934 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1166 ms
+2024-06-05 16:46:53.043 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 16:46:53.095 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 16:46:53.098 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 16:46:53.218 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 16:46:53.334 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 16:46:53.347 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 16:46:53.632 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3220c28
+2024-06-05 16:46:53.633 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 16:46:53.675 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 16:46:53.897 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 16:46:54.538 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 16:46:54.659 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 16:46:55.178 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 16:46:55.509 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 16:47:01.411 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ff584d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7752f9fe, org.springframework.security.web.context.SecurityContextHolderFilter@2d28114b, org.springframework.security.web.header.HeaderWriterFilter@5e7aa27e, org.springframework.security.web.authentication.logout.LogoutFilter@7ba5d307, com.auction.springvproject.security.jwt.AuthTokenFilter@44cab872, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79b9dfcd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7edb2a4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9588bd8, org.springframework.security.web.session.SessionManagementFilter@2d6161b9, org.springframework.security.web.access.ExceptionTranslationFilter@1e32a3ed, org.springframework.security.web.access.intercept.AuthorizationFilter@64230d44]
+2024-06-05 16:47:01.625 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 16:47:01.639 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 16:47:01.646 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 16:47:01.646 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 10.319 seconds (process running for 10.917)
+2024-06-05 16:48:17.872 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 16:48:17.873 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 16:48:17.874 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-05 16:48:34.366 [http-nio-8080-exec-1] INFO  c.a.s.controllers.ProductController - Adding new product
+2024-06-05 17:10:23.302 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m56s453ms11µs800ns).
+2024-06-05 17:10:23.330 [http-nio-8080-exec-2] INFO  c.a.s.controllers.ProductController - Adding new product
+2024-06-05 17:10:23.362 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 17:10:23.364 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 17:10:23.372 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 17:10:35.664 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 17:10:35.693 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 26632 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 17:10:35.694 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 17:10:36.318 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 17:10:36.391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+2024-06-05 17:10:36.912 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 17:10:36.919 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 17:10:36.920 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 17:10:36.920 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 17:10:37.001 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 17:10:37.001 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1272 ms
+2024-06-05 17:10:37.118 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 17:10:37.176 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 17:10:37.178 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 17:10:37.322 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 17:10:37.451 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 17:10:37.466 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 17:10:37.811 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a7e81
+2024-06-05 17:10:37.813 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 17:10:37.860 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 17:10:38.102 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 17:10:38.779 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 17:10:39.017 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 17:10:39.682 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 17:10:40.017 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 17:10:42.727 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@9588bd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75edfe9a, org.springframework.security.web.context.SecurityContextHolderFilter@7edb2a4b, org.springframework.security.web.header.HeaderWriterFilter@7e5b449c, org.springframework.security.web.authentication.logout.LogoutFilter@4a28b6d0, com.auction.springvproject.security.jwt.AuthTokenFilter@e353e1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5811f080, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@355e1080, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@468d1fcc, org.springframework.security.web.session.SessionManagementFilter@79b9dfcd, org.springframework.security.web.access.ExceptionTranslationFilter@2b778004, org.springframework.security.web.access.intercept.AuthorizationFilter@7752f9fe]
+2024-06-05 17:10:42.945 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 17:10:42.960 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 17:10:42.966 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 17:10:42.966 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 7.718 seconds (process running for 8.48)
+2024-06-05 17:10:45.614 [scheduling-1] INFO  c.a.s.controllers.ProductController - Inserted new completed auction to database
+2024-06-05 17:10:45.666 [scheduling-1] INFO  c.a.s.controllers.ProductController - Inserted new completed auction to database
+2024-06-05 17:11:06.616 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 17:11:06.616 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 17:11:06.617 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 17:12:09.377 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s122ms136µs200ns).
+2024-06-05 17:12:42.052 [http-nio-8080-exec-1] ERROR c.a.s.security.jwt.AuthEntryPointJwt - Unauthorized error: Bad credentials
+2024-06-05 17:30:22.173 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m51s869ms338µs500ns).
+2024-06-05 17:30:22.180 [http-nio-8080-exec-4] ERROR c.a.s.security.jwt.AuthEntryPointJwt - Unauthorized error: Bad credentials
+2024-06-05 17:30:22.221 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 17:30:22.223 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 17:30:22.230 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-05 18:00:09.532 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-05 18:00:09.563 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 43228 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-05 18:00:09.564 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-05 18:00:10.226 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 18:00:10.294 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+2024-06-05 18:00:10.831 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-05 18:00:10.839 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-05 18:00:10.840 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-05 18:00:10.840 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-05 18:00:10.914 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-05 18:00:10.914 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+2024-06-05 18:00:11.046 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 18:00:11.113 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-05 18:00:11.116 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-05 18:00:11.293 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 18:00:11.427 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 18:00:11.443 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-05 18:00:11.830 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54941dfd
+2024-06-05 18:00:11.832 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-05 18:00:11.894 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-05 18:00:12.153 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-05 18:00:12.826 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-05 18:00:13.019 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 18:00:13.546 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-05 18:00:13.883 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05 18:00:17.901 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@468d1fcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@267093ea, org.springframework.security.web.context.SecurityContextHolderFilter@355e1080, org.springframework.security.web.header.HeaderWriterFilter@7e1f88e2, org.springframework.security.web.authentication.logout.LogoutFilter@684001e6, com.auction.springvproject.security.jwt.AuthTokenFilter@d4dbb34, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aef651, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25000d3d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b3bcab7, org.springframework.security.web.session.SessionManagementFilter@5811f080, org.springframework.security.web.access.ExceptionTranslationFilter@75fdbd71, org.springframework.security.web.access.intercept.AuthorizationFilter@75edfe9a]
+2024-06-05 18:00:18.120 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-05 18:00:18.138 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-05 18:00:18.146 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-05 18:00:18.146 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 9.059 seconds (process running for 9.871)
+2024-06-05 18:00:42.708 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-05 18:00:42.708 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-05 18:00:42.709 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-05 18:01:22.593 [http-nio-8080-exec-1] ERROR c.a.s.security.jwt.AuthEntryPointJwt - Unauthorized error: Bad credentials
+2024-06-05 18:03:44.750 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s853ms197µs900ns).
+2024-06-05 18:03:45.868 [http-nio-8080-exec-2] ERROR c.a.s.security.jwt.AuthEntryPointJwt - Unauthorized error: Bad credentials
+2024-06-05 18:03:45.928 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 18:03:45.930 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-05 18:03:45.938 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

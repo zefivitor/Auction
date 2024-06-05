@@ -23,12 +23,13 @@ public class CompletedAuction {
     public CompletedAuction() {
     }
 
-    public CompletedAuction(String createdUser, String name, String description, double price, Date dateClosed) {
+    public CompletedAuction(String createdUser, String buyerUser, String name, String description, double price, Date dateClosed) {
+        this.buyerUser = buyerUser;
         this.createdUser = createdUser;
         this.name = name;
         this.description = description;
         this.price = price;
-        this.dateClosed=dateClosed;
+        this.dateClosed = dateClosed;
     }
 
     public String getCreatedUser() {

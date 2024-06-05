@@ -38,13 +38,14 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
-    @Scheduled(fixedRate = 100)
+    @Scheduled(fixedRate = 10000000)
     public void findExpiredProducts() {
 
         logger.info("Looking to find expired products");
         List<Product> expiredProducts = productRepository.findExpiredProducts();
         for (Product product : expiredProducts) {
             CompletedAuction completedAuction = new CompletedAuction(product.getCreatedUser(),
+                    product.getBuyerUser(),
                     product.getName(),
                     product.getDescription(),
                     product.getPrice(),
@@ -56,7 +57,7 @@ public class ProductController {
 
                 BankAccount buyer = bankAccountRepository.findByUsername(product.getBuyerUser());
                 seller.setBalance(seller.getBalance() + product.getPrice());
-                buyer.setBalance(buyer.getBalance() + product.getPrice());
+                buyer.setBalance(buyer.getBalance() - product.getPrice());
                 bankAccountRepository.save(buyer);
                 bankAccountRepository.save(seller);
                 logger.info("Transferring money from " +product.getBuyerUser() +" to "+seller.getUsername());

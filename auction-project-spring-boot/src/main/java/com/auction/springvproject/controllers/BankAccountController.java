@@ -25,7 +25,6 @@ public class BankAccountController {
        currentBankAccountState.setBalance(totalBalance);
        bankAccountService.updateBankAccountBalance(currentBankAccountState);
 
-
         return "Balance updated successfully ";
     }
 
