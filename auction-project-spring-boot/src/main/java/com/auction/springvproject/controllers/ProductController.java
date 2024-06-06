@@ -89,10 +89,15 @@ public class ProductController {
             return ResponseEntity
                     .badRequest()
                     .body(new MessageResponse("The product cannot be purchased by the user himself"));
-        if (product.getPrice() > userBankAccount.getBalance() && product.getPrice() < buyRequest.getPrice())
+        if (product.getPrice() > userBankAccount.getBalance())
             return ResponseEntity
                     .badRequest()
-                    .body(new MessageResponse("Your balance in credit card or price proposed can not buy the product"));
+                    .body(new MessageResponse("Your balance in credit card can not buy the product"));
+        if (product.getPrice() >= buyRequest.getPrice())
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse("The price proposed can not buy the product"));
+
         product.setBuyerUser(userDetails.getUsername());
         product.setPrice(buyRequest.getPrice());
 
