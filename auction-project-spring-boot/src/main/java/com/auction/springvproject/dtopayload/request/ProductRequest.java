@@ -1,6 +1,5 @@
-package com.auction.springvproject.payload.request;
+package com.auction.springvproject.dtopayload.request;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class ProductRequest {

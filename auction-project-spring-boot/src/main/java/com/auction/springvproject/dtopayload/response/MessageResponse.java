@@ -1,4 +1,4 @@
-package com.auction.springvproject.payload.response;
+package com.auction.springvproject.dtopayload.response;
 
 public class MessageResponse {
   private String message;

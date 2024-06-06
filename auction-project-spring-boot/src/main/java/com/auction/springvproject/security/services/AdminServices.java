@@ -1,7 +1,7 @@
 package com.auction.springvproject.security.services;
 
 import com.auction.springvproject.models.User;
-import com.auction.springvproject.payload.response.Users;
+import com.auction.springvproject.dtopayload.response.Users;
 import com.auction.springvproject.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.auction.springvproject.controllers;
 
 
-import com.auction.springvproject.payload.response.Users;
+import com.auction.springvproject.dtopayload.response.Users;
 import com.auction.springvproject.security.services.AdminServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
