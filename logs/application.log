@@ -5126,3 +5126,153 @@ jakarta.validation.UnexpectedTypeException: HV000030: No validator could be foun
 2024-06-06 10:37:00.422 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-06 10:37:00.423 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-06-06 10:37:00.427 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-06 11:43:37.167 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-06 11:43:37.213 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 42848 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-06 11:43:37.213 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 11:43:38.114 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-06 11:43:38.273 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 5 JPA repository interfaces.
+2024-06-06 11:43:39.047 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-06 11:43:39.067 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:43:39.068 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-06 11:43:39.070 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-06 11:43:39.177 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-06 11:43:39.177 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1911 ms
+2024-06-06 11:43:39.326 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-06 11:43:39.424 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-06 11:43:39.427 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-06 11:43:39.639 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:43:39.805 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-06 11:43:39.825 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-06 11:43:40.427 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10d905c1
+2024-06-06 11:43:40.432 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-06 11:43:40.559 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-06 11:43:40.929 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:43:41.826 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-06 11:43:42.171 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 11:43:42.935 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-06 11:43:43.401 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-06 11:43:46.231 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39aa595, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cad2d5f, org.springframework.security.web.context.SecurityContextHolderFilter@db9ecd, org.springframework.security.web.header.HeaderWriterFilter@397f3ff5, org.springframework.security.web.authentication.logout.LogoutFilter@7d461450, com.auction.springvproject.security.jwt.AuthTokenFilter@4fb42efa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23ac164d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4057babc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d707885, org.springframework.security.web.session.SessionManagementFilter@666033b1, org.springframework.security.web.access.ExceptionTranslationFilter@8b814b, org.springframework.security.web.access.intercept.AuthorizationFilter@6a7a8e1e]
+2024-06-06 11:43:46.539 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:43:46.561 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-06 11:43:46.571 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-06 11:43:46.571 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 10.266 seconds (process running for 11.322)
+2024-06-06 11:44:30.878 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06 11:44:30.878 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-06 11:44:30.879 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-06 11:44:46.561 [http-nio-8080-exec-1] INFO  c.a.s.controllers.ProductController - Reserved product for user vitor12
+2024-06-06 11:48:36.249 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m12s780ms471µs100ns).
+2024-06-06 11:48:36.271 [http-nio-8080-exec-2] INFO  c.a.s.controllers.ProductController - Reserved product for user vitor12
+2024-06-06 11:48:36.316 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 11:48:36.319 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-06 11:48:36.325 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-06 11:51:17.865 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-06 11:51:17.920 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 23548 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-06 11:51:17.921 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 11:51:18.666 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-06 11:51:18.744 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 5 JPA repository interfaces.
+2024-06-06 11:51:19.398 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-06 11:51:19.408 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:51:19.408 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-06 11:51:19.409 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-06 11:51:19.500 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-06 11:51:19.500 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1531 ms
+2024-06-06 11:51:19.645 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-06 11:51:19.696 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-06 11:51:19.699 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-06 11:51:19.837 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:51:19.970 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-06 11:51:19.985 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-06 11:51:20.361 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e49b011
+2024-06-06 11:51:20.365 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-06 11:51:20.462 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-06 11:51:20.763 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:51:21.478 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-06 11:51:21.680 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 11:51:22.326 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-06 11:51:22.774 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-06 11:51:25.381 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4dd11699, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d805670, org.springframework.security.web.context.SecurityContextHolderFilter@d3effcb, org.springframework.security.web.header.HeaderWriterFilter@1e3f0c5c, org.springframework.security.web.authentication.logout.LogoutFilter@39aa595, com.auction.springvproject.security.jwt.AuthTokenFilter@7b9f7087, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1743c249, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2531049f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58477355, org.springframework.security.web.session.SessionManagementFilter@451e8bd0, org.springframework.security.web.access.ExceptionTranslationFilter@54a332e4, org.springframework.security.web.access.intercept.AuthorizationFilter@6eec564c]
+2024-06-06 11:51:25.632 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:51:25.656 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-06 11:51:25.664 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-06 11:51:25.664 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 8.268 seconds (process running for 8.982)
+2024-06-06 11:51:43.184 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06 11:51:43.185 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-06 11:51:43.187 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-06 11:53:34.785 [http-nio-8080-exec-3] ERROR c.a.s.security.jwt.AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+2024-06-06 11:57:25.298 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m18s622ms741µs800ns).
+2024-06-06 11:57:29.854 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 11:57:29.858 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-06 11:57:29.871 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-06 11:57:44.448 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-06 11:57:44.492 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 18292 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-06 11:57:44.492 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 11:57:45.228 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-06 11:57:45.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+2024-06-06 11:57:45.997 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-06 11:57:46.006 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:57:46.007 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-06 11:57:46.007 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-06 11:57:46.116 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-06 11:57:46.116 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1576 ms
+2024-06-06 11:57:46.285 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-06 11:57:46.329 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-06 11:57:46.332 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-06 11:57:46.451 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:57:46.571 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-06 11:57:46.586 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-06 11:57:46.907 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c3f43d1
+2024-06-06 11:57:46.909 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-06 11:57:46.960 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-06 11:57:47.248 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:57:47.914 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-06 11:57:48.168 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 11:57:48.747 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-06 11:57:49.186 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-06 11:57:49.472 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b4a77be, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ff55410, org.springframework.security.web.context.SecurityContextHolderFilter@3c67b7a9, org.springframework.security.web.header.HeaderWriterFilter@68c9cf93, org.springframework.security.web.authentication.logout.LogoutFilter@5ac3c6cd, com.auction.springvproject.security.jwt.AuthTokenFilter@304704ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47de4dce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4951c45f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53628ff6, org.springframework.security.web.session.SessionManagementFilter@628721ba, org.springframework.security.web.access.ExceptionTranslationFilter@3bb59485, org.springframework.security.web.access.intercept.AuthorizationFilter@23e0ef68]
+2024-06-06 11:57:49.699 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:57:49.716 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-06 11:57:49.723 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-06 11:57:49.724 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 5.662 seconds (process running for 6.254)
+2024-06-06 11:57:55.664 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06 11:57:55.664 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-06 11:57:55.665 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-06 11:58:03.279 [http-nio-8080-exec-2] INFO  c.a.s.controllers.ProductController - Reserved product for user vitor12
+2024-06-06 11:58:42.966 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 11:58:42.968 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-06 11:58:42.973 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-06 11:59:31.257 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2024-06-06 11:59:31.305 [main] INFO  c.a.s.SpringAuctionProject - Starting SpringAuctionProject using Java 22.0.1 with PID 20816 (C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava\auction-project-spring-boot\target\classes started by DELL in C:\Users\DELL\Downloads\spring-boot-spring-auctionprojectjava)
+2024-06-06 11:59:31.306 [main] INFO  c.a.s.SpringAuctionProject - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 11:59:32.040 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-06 11:59:32.123 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+2024-06-06 11:59:32.698 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-06 11:59:32.707 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:59:32.707 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-06 11:59:32.707 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-06-06 11:59:32.794 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-06 11:59:32.795 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1443 ms
+2024-06-06 11:59:32.923 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-06 11:59:32.982 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-06-06 11:59:32.984 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-06-06 11:59:33.121 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:59:33.271 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-06 11:59:33.306 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-06 11:59:33.655 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2976ef56
+2024-06-06 11:59:33.657 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-06 11:59:33.706 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.4
+2024-06-06 11:59:33.997 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-06-06 11:59:34.709 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-06 11:59:34.980 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 11:59:35.601 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-06 11:59:36.012 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-06 11:59:41.977 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c41b4b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55a4a0ab, org.springframework.security.web.context.SecurityContextHolderFilter@274de4bc, org.springframework.security.web.header.HeaderWriterFilter@6e44825e, org.springframework.security.web.authentication.logout.LogoutFilter@7e32f76b, com.auction.springvproject.security.jwt.AuthTokenFilter@7136ad9a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbc3b6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38e1442a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5066a895, org.springframework.security.web.session.SessionManagementFilter@4057babc, org.springframework.security.web.access.ExceptionTranslationFilter@3299cc9f, org.springframework.security.web.access.intercept.AuthorizationFilter@3d707885]
+2024-06-06 11:59:42.221 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-06 11:59:42.244 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-06 11:59:42.251 [scheduling-1] INFO  c.a.s.controllers.ProductController - Looking to find expired products
+2024-06-06 11:59:42.251 [main] INFO  c.a.s.SpringAuctionProject - Started SpringAuctionProject in 11.489 seconds (process running for 12.203)
+2024-06-06 11:59:55.025 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06 11:59:55.025 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-06 11:59:55.026 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-06 12:00:25.158 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-06 12:00:25.160 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-06 12:00:25.167 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

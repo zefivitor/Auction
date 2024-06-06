@@ -61,7 +61,7 @@ public class ProductController {
                 buyer.setBalance(buyer.getBalance() - product.getPrice());
                 bankAccountRepository.save(buyer);
                 bankAccountRepository.save(seller);
-                logger.info("Transferring money from " +product.getBuyerUser() +" to "+seller.getUsername());
+                logger.info("Transferring money from " + product.getBuyerUser() + " to " + seller.getUsername());
             }
             productRepository.delete(product);
         }
@@ -85,11 +85,14 @@ public class ProductController {
         UserDetailsImpl userDetails = (UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         Product product = productService.getProductId(buyRequest.getId());
         BankAccount userBankAccount = bankAccountRepository.findByUsername(userDetails.getUsername());
+        double balanceAvailable = userBankAccount.getBalance() - productRepository.findTotalSpentByBuyer(userDetails.getUsername());
+
         if (product.getCreatedUser().equals(userDetails.getUsername()))
             return ResponseEntity
                     .badRequest()
                     .body(new MessageResponse("The product cannot be purchased by the user himself"));
-        if (product.getPrice() > userBankAccount.getBalance())
+
+        if (product.getPrice() > balanceAvailable || buyRequest.getPrice() > balanceAvailable)
             return ResponseEntity
                     .badRequest()
                     .body(new MessageResponse("Your balance in credit card can not buy the product"));
