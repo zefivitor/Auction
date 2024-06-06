@@ -6,7 +6,6 @@ import java.util.Set;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "users", 
@@ -20,17 +19,14 @@ public class User {
   private Long id;
 
   @NotBlank
-  @Size(max = 20)
   private String username;
 
   @NotBlank
-  @Size(max = 50)
   @Email
   private String email;
 
   @NotBlank
-  @Size(max = 120)
-  private String password;
+   private String password;
 
   @ManyToMany(fetch = FetchType.LAZY)
   @JoinTable(  name = "user_roles", 

@@ -18,7 +18,7 @@ public class BankAccountController {
 
 
     @PostMapping("/add")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    @PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
     public String addCredit(@RequestBody BankAccount bankAccount) {
        BankAccount currentBankAccountState = bankAccountService.getBankAccount(bankAccount.getUsername());
        double totalBalance=currentBankAccountState.getBalance()+ bankAccount.getBalance();
@@ -29,7 +29,7 @@ public class BankAccountController {
     }
 
     @GetMapping("/{username}")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    @PreAuthorize("hasRole('USER') or  hasRole('ADMIN')")
     public BankAccount getBalanceInformation(@PathVariable String username) {
         UserDetailsImpl userDetails = (UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
          if(!userDetails.getUsername().equals(username))

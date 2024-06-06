@@ -1,11 +1,7 @@
 package com.auction.springvproject.models;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-
-import javax.xml.crypto.Data;
-import java.time.Instant;
 import java.util.Date;
 
 @Entity
@@ -15,6 +11,7 @@ public class Product {
     private Long id;
     private String createdUser;
     private String buyerUser;
+    @NotBlank
     private String name;
     private String description;
     private double price;
@@ -28,7 +25,7 @@ public class Product {
         this.name = name;
         this.description = description;
         this.price = price;
-        this.dateClosed=dateClosed;
+        this.dateClosed = dateClosed;
     }
 
     public String getCreatedUser() {

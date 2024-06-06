@@ -1,11 +1,6 @@
 package com.auction.springvproject.models;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-
-import javax.xml.crypto.Data;
-import java.time.Instant;
 import java.util.Date;
 
 @Entity

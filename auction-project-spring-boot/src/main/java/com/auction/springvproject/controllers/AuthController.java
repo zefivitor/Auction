@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
-
 import com.auction.springvproject.models.BankAccount;
+import com.auction.springvproject.payload.request.ChangePasswordRequest;
 import com.auction.springvproject.repository.BankAccountRepository;
 import com.auction.springvproject.security.services.UserDetailsImpl;
 import jakarta.validation.Valid;
@@ -19,8 +18,8 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -102,6 +101,16 @@ public class AuthController {
                     .body(new MessageResponse("Error: Email is already in use!"));
         }
 
+        if (signUpRequest.getUsername().length() > 20 && signUpRequest.getUsername().length() < 4)
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse("Username should be between size 4 and 20 character"));
+
+        if (signUpRequest.getPassword().length() < 8)
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse("Password should be at least 8 characters"));
+
         // Create new user's account
         User user = new User(signUpRequest.getUsername(),
                 signUpRequest.getEmail(),
@@ -123,12 +132,6 @@ public class AuthController {
                         roles.add(adminRole);
 
                         break;
-                    case "mod":
-                        Role modRole = roleRepository.findByName(ERole.ROLE_MODERATOR)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(modRole);
-
-                        break;
                     default:
                         Role userRole = roleRepository.findByName(ERole.ROLE_USER)
                                 .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
@@ -144,8 +147,19 @@ public class AuthController {
         BankAccount bankAccount = new BankAccount(user.getUsername(), 1000);
         bankAccountRepository.save(bankAccount);
         logger.info("User successfully registered " + user.getUsername());
-
-
         return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
+    }
+
+
+    @PostMapping("/changepassword")
+    public String changePassword(@RequestBody ChangePasswordRequest changePasswordRequest) {
+        User user = userRepository.findByUsername(changePasswordRequest.getUsername())
+                .orElseThrow(() -> new UsernameNotFoundException("User Not Found with username: " + changePasswordRequest.getUsername()));
+        if (encoder.matches(changePasswordRequest.getOldPassword(), user.getPassword())) {
+            user.setPassword(encoder.encode(changePasswordRequest.getNewPassword()));
+            userRepository.save(user);
+        } else
+            throw new RuntimeException("The old password is not correct");
+        return "Password changed successfully";
     }
 }

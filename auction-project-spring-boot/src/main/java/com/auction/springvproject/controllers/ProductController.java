@@ -5,6 +5,7 @@ import com.auction.springvproject.models.CompletedAuction;
 import com.auction.springvproject.models.Product;
 import com.auction.springvproject.payload.request.BuyRequest;
 import com.auction.springvproject.payload.request.ProductRequest;
+import com.auction.springvproject.payload.response.MessageResponse;
 import com.auction.springvproject.repository.BankAccountRepository;
 import com.auction.springvproject.repository.CompletedAuctionRepository;
 import com.auction.springvproject.repository.ProductRepository;
@@ -67,7 +68,7 @@ public class ProductController {
     }
 
     @PostMapping("/add")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    @PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
     public String addProduct(@RequestBody ProductRequest productRequest) {
         UserDetailsImpl userDetails = (UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         Product product = new Product(userDetails.getUsername(), productRequest.getName(), productRequest.getDescription(), productRequest.getPrice(), productRequest.getDateClosed());
@@ -79,40 +80,45 @@ public class ProductController {
 
 
     @PutMapping("/buyProduct")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
-    public String buyProductFromAuctions(@RequestBody BuyRequest buyRequest) {
+    @PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
+    public ResponseEntity<?> buyProductFromAuctions(@RequestBody BuyRequest buyRequest) {
         UserDetailsImpl userDetails = (UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         Product product = productService.getProductId(buyRequest.getId());
         BankAccount userBankAccount = bankAccountRepository.findByUsername(userDetails.getUsername());
         if (product.getCreatedUser().equals(userDetails.getUsername()))
-            throw new RuntimeException("The product can not buy by the created user");
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse("The product cannot be purchased by the user himself"));
         if (product.getPrice() > userBankAccount.getBalance() && product.getPrice() < buyRequest.getPrice())
-            throw new RuntimeException("Your balance in credit card or price proposed can not buy the product");
-
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse("Your balance in credit card or price proposed can not buy the product"));
         product.setBuyerUser(userDetails.getUsername());
         product.setPrice(buyRequest.getPrice());
 
         productRepository.save(product);
         logger.info("Reserved product for user " + product.getBuyerUser());
-        return "Product reserved successfully ";
+        return ResponseEntity.ok(new MessageResponse("Product reserved successfully "));
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
-    public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
+    @PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
+    public ResponseEntity<?> deleteProduct(@PathVariable Long id) {
         UserDetailsImpl userDetails = (UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         Product product = productService.getProductId(id);
         if (product.getCreatedUser().equals(userDetails.getUsername()))
             productService.deleteProduct(id);
         else
-            throw new RuntimeException("Product can be deleted from the created user");
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse("Product can be deleted from the created user"));
         logger.info("Product with id " + id + " deleted successfully");
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok(new MessageResponse("Product deleted successfully"));
     }
 
 
     @GetMapping("/listall")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    @PreAuthorize("hasRole('USER') or  hasRole('ADMIN')")
     public List<Product> getAllProducts() {
         logger.info("Listing all products");
         return productService.getAllProducts();
