@@ -9,6 +9,8 @@ import com.auction.springvproject.models.BankAccount;
 import com.auction.springvproject.dtopayload.request.ChangePasswordRequest;
 import com.auction.springvproject.repository.BankAccountRepository;
 import com.auction.springvproject.security.services.UserDetailsImpl;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 
 import org.slf4j.Logger;
@@ -22,11 +24,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
+import org.springframework.web.bind.annotation.*;
 
 import com.auction.springvproject.models.ERole;
 import com.auction.springvproject.models.Role;
@@ -160,5 +159,14 @@ public class AuthController {
         } else
             throw new RuntimeException("The old password is not correct");
         return "Password changed successfully";
+    }
+
+    @RequestMapping(value="/logout", method= RequestMethod.GET)
+    public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (auth != null){
+            new SecurityContextLogoutHandler().logout(request, response, auth);
+        }
+        return "logout successfully";
     }
 }
