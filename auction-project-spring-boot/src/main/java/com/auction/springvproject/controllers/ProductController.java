@@ -133,5 +133,13 @@ public class ProductController {
 
     }
 
+
+    @GetMapping("/{name}")
+    @PreAuthorize("hasRole('USER') or  hasRole('ADMIN')")
+    public Product getProductByName(@PathVariable String name) {
+        logger.info("Getting product by name");
+        return productService.getProductByName(name);
+    }
+
 }
 

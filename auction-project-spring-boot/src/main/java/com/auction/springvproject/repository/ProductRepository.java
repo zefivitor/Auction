@@ -19,4 +19,8 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     @Query("SELECT SUM(p.price) FROM Product p WHERE p.buyerUser = :buyerUser")
     Double findTotalSpentByBuyer(@Param("buyerUser") String buyerUser);
+
+    @Query("SELECT p FROM Product p WHERE p.name = :name")
+    Product findByNameCustom(@Param("name") String name);
+
 }
